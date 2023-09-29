@@ -1,4 +1,4 @@
-module proto
+module github.com/PuckCao/proto
 
 go 1.18
 
