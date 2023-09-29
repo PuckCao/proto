@@ -1,0 +1,19 @@
+syntax = "proto3";
+package user;
+//帮我编写service
+
+service User {
+  rpc Register (RegisterReq) returns (RegisterResp);
+}
+message RegisterReq {
+  string username = 1;
+  string password = 2;
+  string phone = 3;
+}
+message RegisterResp {
+    ErrMsg errMsg = 1;
+}
+message ErrMsg {
+  int64 code = 1;
+  string msg = 2;
+}
