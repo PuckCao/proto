@@ -1,6 +1,6 @@
 syntax = "proto3";
 package user;
-//帮我编写service
+
 
 service User {
   rpc Register (RegisterReq) returns (RegisterResp);
