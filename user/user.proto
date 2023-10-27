@@ -4,7 +4,6 @@ package user;
 
 service User {
   rpc Register (RegisterReq) returns (RegisterResp);
-  rpc PhoneCheck(PhoneCheckReq) returns (PhoneCheckResp);
 }
 message RegisterReq {
   string username = 1;
@@ -17,11 +16,4 @@ message RegisterResp {
 message ErrMsg {
   int64 code = 1;
   string msg = 2;
-}
-
-message PhoneCheckReq {
-  string phone = 1;
-}
-message PhoneCheckResp {
-    ErrMsg errMsg = 1;
 }
